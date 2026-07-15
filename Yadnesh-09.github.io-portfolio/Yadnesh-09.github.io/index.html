@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yadnesh Patil's AWS Cloud and DevOps project portfolio.">
+  <meta name="theme-color" content="#07111f">
+
+  <title>Yadnesh Patil | AWS Cloud Portfolio</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Yadnesh Patil home">
+        <span class="brand-mark">YP</span>
+        <span class="brand-text">Yadnesh Patil</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+        aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#skills">AWS Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+        <button class="theme-toggle" id="themeToggle" type="button"
+          aria-label="Switch color theme">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Open to AWS Cloud & DevOps internships
+          </div>
+
+          <p class="eyebrow">AWS CLOUD • DEVOPS • SERVERLESS</p>
+
+          <h1>
+            Building reliable cloud applications
+            <span>that solve real problems.</span>
+          </h1>
+
+          <p class="hero-text">
+            I’m Yadnesh Patil, an engineering student building practical AWS
+            projects across serverless systems, scalable infrastructure,
+            containers, automation and AI services.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore projects
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="button button-secondary"
+              href="https://github.com/Yadnesh-09"
+              target="_blank" rel="noopener noreferrer">
+              GitHub profile
+            </a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Portfolio summary">
+            <div>
+              <strong id="projectMetric">0</strong>
+              <span>Projects</span>
+            </div>
+            <div>
+              <strong id="serviceMetric">0</strong>
+              <span>AWS services</span>
+            </div>
+            <div>
+              <strong id="liveMetric">0</strong>
+              <span>Live demos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="AWS architecture illustration">
+          <div class="architecture-card">
+            <div class="architecture-top">
+              <span>PROJECT ARCHITECTURE</span>
+              <span class="live-indicator">● LIVE</span>
+            </div>
+
+            <div class="architecture-flow">
+              <div class="architecture-node node-user">
+                <span class="node-icon">◎</span>
+                <span>User</span>
+              </div>
+
+              <span class="flow-arrow">→</span>
+
+              <div class="architecture-node">
+                <span class="node-icon">◈</span>
+                <span>CloudFront</span>
+              </div>
+
+              <span class="flow-arrow">→</span>
+
+              <div class="architecture-node">
+                <span class="node-icon">⌁</span>
+                <span>API Gateway</span>
+              </div>
+
+              <span class="flow-arrow">→</span>
+
+              <div class="architecture-node">
+                <span class="node-icon">λ</span>
+                <span>Lambda</span>
+              </div>
+            </div>
+
+            <div class="architecture-bottom">
+              <div class="mini-service">
+                <span>▣</span>
+                <div><strong>S3</strong><small>Storage</small></div>
+              </div>
+
+              <div class="mini-service">
+                <span>◆</span>
+                <div><strong>DynamoDB</strong><small>Database</small></div>
+              </div>
+
+              <div class="mini-service">
+                <span>◉</span>
+                <div><strong>CloudWatch</strong><small>Monitoring</small></div>
+              </div>
+            </div>
+
+            <div class="architecture-code">
+              <span>deployment_status</span>
+              <strong>"production-ready"</strong>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-one">Serverless</div>
+          <div class="floating-badge badge-two">CI/CD</div>
+          <div class="floating-badge badge-three">Scalable</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Core areas">
+      <div class="container trust-items">
+        <span>SERVERLESS</span>
+        <span>AUTO SCALING</span>
+        <span>CONTAINERS</span>
+        <span>CI/CD</span>
+        <span>CLOUD MONITORING</span>
+        <span>AI SERVICES</span>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Cloud projects with working architecture</h2>
+          </div>
+
+          <p>
+            Each project includes a practical use case, AWS architecture,
+            source code and deployment documentation.
+          </p>
+        </div>
+
+        <div class="filter-bar" id="filterBar" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">
+            All projects
+          </button>
+          <button class="filter-button" type="button" data-filter="featured">
+            Featured
+          </button>
+          <button class="filter-button" type="button" data-filter="serverless">
+            Serverless
+          </button>
+          <button class="filter-button" type="button" data-filter="devops">
+            DevOps
+          </button>
+          <button class="filter-button" type="button" data-filter="ai">
+            AI / ML
+          </button>
+          <button class="filter-button" type="button" data-filter="infrastructure">
+            Infrastructure
+          </button>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+
+        <div class="empty-filter" id="emptyFilter" hidden>
+          No projects match this filter yet.
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TECHNICAL TOOLKIT</p>
+            <h2>AWS services and engineering skills</h2>
+          </div>
+
+          <p>
+            Experience gained through hands-on portfolio projects and
+            deployment troubleshooting.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-number">01</span>
+            <h3>Compute & Containers</h3>
+            <p>EC2, Lambda, ECS Fargate, Docker, Auto Scaling</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">02</span>
+            <h3>Storage & Databases</h3>
+            <p>Amazon S3, DynamoDB, RDS MySQL, ECR</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">03</span>
+            <h3>Networking & Delivery</h3>
+            <p>API Gateway, ALB, CloudFront, Security Groups</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">04</span>
+            <h3>DevOps & Monitoring</h3>
+            <p>GitHub Actions, CodePipeline, CloudWatch, IAM</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">05</span>
+            <h3>AI Services</h3>
+            <p>Amazon Rekognition, Polly, Textract concepts</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">06</span>
+            <h3>Development</h3>
+            <p>Python, Flask, HTML, CSS, JavaScript, Git</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Learning cloud engineering by building complete systems.</h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I am pursuing Electrical Engineering at R. C. Patel Institute of
+            Technology and building a career in AWS cloud and DevOps. My
+            projects focus on complete user workflows—not only infrastructure
+            screenshots.
+          </p>
+
+          <p>
+            I enjoy converting ideas into deployed applications, debugging
+            real AWS integration problems, and documenting architecture so
+            that another developer can reproduce the project.
+          </p>
+
+          <div class="about-links">
+            <a href="mailto:yadnesh860@gmail.com">Email me</a>
+            <a href="https://github.com/Yadnesh-09"
+              target="_blank" rel="noopener noreferrer">View GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">LET’S CONNECT</p>
+          <h2>Looking for an AWS Cloud or DevOps intern?</h2>
+          <p>
+            Explore the repositories, test the live applications, or contact
+            me to discuss the architecture and implementation.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-light"
+            href="mailto:yadnesh860@gmail.com">
+            yadnesh860@gmail.com
+          </a>
+
+          <button class="copy-button" id="copyEmailButton" type="button"
+            data-email="yadnesh860@gmail.com">
+            Copy email
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Yadnesh Patil</strong>
+        <span>AWS Cloud & DevOps Portfolio</span>
+      </div>
+
+      <p>
+        © <span id="currentYear"></span> Built and deployed through GitHub Pages.
+      </p>
+
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
