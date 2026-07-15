@@ -1106,3 +1106,7 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+.project-actions {
+  flex-wrap: wrap;
+}

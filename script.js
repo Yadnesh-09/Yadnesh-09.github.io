@@ -17,12 +17,41 @@ const projects = [
     ],
     categories: ["featured", "serverless", "ai"],
     status: "Live",
-    icon: "♫",
+    icon: "S",
     type: "Serverless AI Application",
     featured: true,
-    liveUrl: "https://yadnesh-09.github.io/aws-kids-storytelling-app/",
-    repositoryUrl: "https://github.com/Yadnesh-09/aws-kids-storytelling-app",
+    liveLabel: "Live demo",
+    liveUrl:
+      "https://yadnesh-09.github.io/aws-kids-storytelling-app/",
+    repositoryUrl:
+      "https://github.com/Yadnesh-09/aws-kids-storytelling-app",
     accent: "#53d5ff"
+  },
+  {
+    title: "AWS Road and Rain Complaint Management System",
+    description:
+      "A citizen and admin portal for submitting, tracking and managing road complaints with image uploads, status updates and department assignment.",
+    services: [
+      "AWS Lambda",
+      "API Gateway",
+      "Amazon RDS",
+      "Amazon S3",
+      "CloudFront",
+      "EventBridge"
+    ],
+    categories: ["featured", "serverless"],
+    status: "Live",
+    icon: "R",
+    type: "Full-Stack AWS Application",
+    featured: true,
+    liveLabel: "Citizen site",
+    liveUrl:
+      "https://dvyatn4xrtspb.cloudfront.net/",
+    adminUrl:
+      "https://dvyatn4xrtspb.cloudfront.net/admin.html",
+    repositoryUrl:
+      "https://github.com/Yadnesh-09/aws-road-rain-complaint-system",
+    accent: "#f59e0b"
   }
 ];
 
@@ -151,10 +180,33 @@ function createProjectCard(project, index) {
 
   const actions = document.createElement("div");
   actions.className = "project-actions";
-  actions.append(
-    createProjectLink(project.liveUrl, "Live demo", "primary"),
-    createProjectLink(project.repositoryUrl, "View code", "secondary")
+  const projectLinks = [
+    createProjectLink(
+      project.liveUrl,
+      project.liveLabel || "Live demo",
+      "primary"
+    )
+  ];
+
+  if (project.adminUrl) {
+    projectLinks.push(
+      createProjectLink(
+        project.adminUrl,
+        "Admin portal",
+        "secondary"
+      )
+    );
+  }
+
+  projectLinks.push(
+    createProjectLink(
+      project.repositoryUrl,
+      "View code",
+      "secondary"
+    )
   );
+
+  actions.append(...projectLinks);
 
   body.append(title, description, tags, actions);
   article.append(visual, body);
@@ -267,4 +319,5 @@ document.getElementById("currentYear").textContent =
 
 renderProjects();
 updateMetrics();
+
 
