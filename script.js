@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
    PROJECT DATA
    Add a new project only after it is working, tested and public.
    ========================================================= */
@@ -76,6 +76,31 @@ const projects = [
       "https://github.com/Yadnesh-09/aws-road-rain-complaint-system",
 
     accent: "#f59e0b"
+  },
+  {
+    title: "CloudTask - AWS ECS Fargate Task Manager",
+    description:
+      "A containerized Flask task manager deployed on Amazon ECS Fargate with two running tasks, an Application Load Balancer, DynamoDB persistence, Amazon ECR image storage and CloudWatch logging.",
+    services: [
+      "Docker",
+      "Amazon ECR",
+      "Amazon ECS",
+      "AWS Fargate",
+      "Application Load Balancer",
+      "DynamoDB",
+      "CloudWatch"
+    ],
+    categories: ["featured", "devops", "infrastructure"],
+    status: "Live",
+    icon: "C",
+    type: "Containerized AWS Application",
+    featured: true,
+    liveLabel: "Live demo",
+    liveUrl:
+      "http://cloudtask-alb-1160152713.ap-south-1.elb.amazonaws.com",
+    repositoryUrl:
+      "https://github.com/Yadnesh-09/aws-cloudtask-ecs-fargate",
+    accent: "#22c55e"
   }
 ];
 
