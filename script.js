@@ -5,10 +5,72 @@
 
 const projects = [
   {
+    title: "CloudNotes AI",
+    description:
+      "A secure serverless notes platform with Cognito authentication, DynamoDB note storage, private S3 attachments and HTTPS delivery through CloudFront.",
+    services: [
+      "Amazon CloudFront",
+      "Amazon S3",
+      "Amazon Cognito",
+      "API Gateway",
+      "AWS Lambda",
+      "DynamoDB"
+    ],
+    categories: ["featured", "serverless", "ai"],
+    status: "Live",
+    icon: "✦",
+    type: "Secure Serverless Application",
+    featured: true,
+    liveUrl: "https://d3babvjhe08a5r.cloudfront.net",
+    repositoryUrl: "https://github.com/Yadnesh-09/aws-cloudnotes-ai",
+    accent: "#a78bfa"
+  },
+  {
+    title: "Road & Rain Complaint System",
+    description:
+      "A citizen complaint portal for reporting potholes, garbage, traffic and streetlight problems with tracking, administration and image evidence.",
+    services: [
+      "Amazon CloudFront",
+      "Amazon S3",
+      "API Gateway",
+      "AWS Lambda",
+      "Amazon RDS",
+      "EventBridge"
+    ],
+    categories: ["featured", "serverless", "infrastructure"],
+    status: "Live",
+    icon: "☂",
+    type: "Civic Management Platform",
+    featured: true,
+    liveUrl: "https://dvyatn4xrtspb.cloudfront.net/",
+    repositoryUrl: "https://github.com/Yadnesh-09/aws-road-rain-complaint-system",
+    accent: "#34d399"
+  },
+  {
+    title: "CloudTask ECS Fargate",
+    description:
+      "A containerized task-management application deployed using Docker, Amazon ECR, ECS Fargate and an Application Load Balancer.",
+    services: [
+      "Amazon ECS",
+      "AWS Fargate",
+      "Amazon ECR",
+      "Docker",
+      "Application Load Balancer",
+      "DynamoDB"
+    ],
+    categories: ["featured", "devops", "infrastructure"],
+    status: "Live",
+    icon: "☁",
+    type: "Containerized DevOps Application",
+    featured: true,
+    liveUrl: "http://cloudtask-alb-1160152713.ap-south-1.elb.amazonaws.com",
+    repositoryUrl: "https://github.com/Yadnesh-09/aws-cloudtask-ecs-fargate",
+    accent: "#fb923c"
+  },
+  {
     title: "AWS Kids Storytelling App",
     description:
       "Uploads text stories to Amazon S3 and generates narrated MP3 audio with Amazon Polly, while DynamoDB stores processing history.",
-
     services: [
       "Amazon S3",
       "AWS Lambda",
@@ -16,91 +78,14 @@ const projects = [
       "Amazon Polly",
       "DynamoDB"
     ],
-
-    categories: [
-      "featured",
-      "serverless",
-      "ai"
-    ],
-
+    categories: ["featured", "serverless", "ai"],
     status: "Live",
-    icon: "S",
+    icon: "♫",
     type: "Serverless AI Application",
     featured: true,
-
-    liveLabel: "Live demo",
-
-    liveUrl:
-      "https://yadnesh-09.github.io/aws-kids-storytelling-app/",
-
-    repositoryUrl:
-      "https://github.com/Yadnesh-09/aws-kids-storytelling-app",
-
+    liveUrl: "https://yadnesh-09.github.io/aws-kids-storytelling-app/",
+    repositoryUrl: "https://github.com/Yadnesh-09/aws-kids-storytelling-app",
     accent: "#53d5ff"
-  },
-
-  {
-    title: "AWS Road and Rain Complaint Management System",
-
-    description:
-      "A citizen and admin portal for submitting, tracking and managing road complaints with image uploads, status updates and department assignment.",
-
-    services: [
-      "AWS Lambda",
-      "API Gateway",
-      "Amazon RDS",
-      "Amazon S3",
-      "CloudFront",
-      "EventBridge"
-    ],
-
-    categories: [
-      "featured",
-      "serverless"
-    ],
-
-    status: "Live",
-    icon: "R",
-    type: "Full-Stack AWS Application",
-    featured: true,
-
-    liveLabel: "Citizen site",
-
-    liveUrl:
-      "https://dvyatn4xrtspb.cloudfront.net/",
-
-    adminUrl:
-      "https://dvyatn4xrtspb.cloudfront.net/admin.html",
-
-    repositoryUrl:
-      "https://github.com/Yadnesh-09/aws-road-rain-complaint-system",
-
-    accent: "#f59e0b"
-  },
-  {
-    title: "CloudTask - AWS ECS Fargate Task Manager",
-    description:
-      "A containerized Flask task manager deployed on Amazon ECS Fargate with two running tasks, an Application Load Balancer, DynamoDB persistence, Amazon ECR image storage and CloudWatch logging.",
-    services: [
-      "Docker",
-      "Amazon ECR",
-      "Amazon ECS",
-      "AWS Fargate",
-      "Application Load Balancer",
-      "DynamoDB",
-      "CloudWatch"
-    ],
-    categories: ["featured", "devops", "infrastructure"],
-    status: "Live",
-    icon: "C",
-    type: "Containerized AWS Application",
-    featured: true,
-    liveLabel: "Live demo",
-    liveUrl:
-      "http://cloudtask-alb-1160152713.ap-south-1.elb.amazonaws.com",
-    repositoryUrl:
-      "https://github.com/Yadnesh-09/aws-cloudtask-ecs-fargate",
-    accent: "#22c55e"
   }
 ];
 
