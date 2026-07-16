@@ -5,6 +5,31 @@
 
 const projects = [
   {
+    title: "PixelFlow — Serverless Image Resizer",
+    description:
+      "An event-driven image-processing platform that resizes, converts and optimizes JPEG, PNG and WebP images using AWS Lambda and Pillow.",
+    services: [
+      "Amazon S3",
+      "AWS Lambda",
+      "API Gateway",
+      "DynamoDB",
+      "Amazon ECR",
+      "Docker"
+    ],
+    categories: [
+      "featured",
+      "serverless",
+      "devops"
+    ],
+    status: "Completed",
+    icon: "▣",
+    type: "Serverless Image Processing",
+    featured: true,
+    liveUrl: "",
+    repositoryUrl: "https://github.com/Yadnesh-09/aws-pixelflow-serverless-image-resizer",
+    accent: "#f472b6"
+  },
+  {
     title: "CloudNotes AI",
     description:
       "A secure serverless notes platform with Cognito authentication, DynamoDB note storage, private S3 attachments and HTTPS delivery through CloudFront.",
